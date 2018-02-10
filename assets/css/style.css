@@ -1,0 +1,246 @@
+
+/* MAIN STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: dimgray;
+    transition: .8s ease-in-out;
+}
+
+a:hover {
+    color: cadetblue;
+}
+
+h1, h2, h3, h5 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: 900;
+}
+
+p, a, h4, form {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+}
+
+h2 {
+    padding-bottom: 60px;
+    color: cadetblue;
+    font-size: 1.8em;
+}
+
+h3 {
+    padding-bottom: 50px;
+    color: cadetblue;
+    font-size: 1.5em;
+}
+
+h4 {
+    color: lightgray;
+    font-size: .8em;
+}
+
+p {
+    line-height: 1.6;
+}
+
+p, form {
+    color: dimgray;
+}
+
+
+
+/* FLEXBOX STICKY FOOTER */
+
+.page {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+
+/* HEADER STYLES */
+
+header {
+    height: 80px;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    background-color: #4aaaa5;
+    height: 100%;
+    vertical-align: bottom;
+    padding: 20px 20px 0 20px;
+    margin-left: 150px;
+    font-size: 1.8em;
+    color: white;
+}
+
+nav {
+    float: left;
+    padding: 30px 10px 0 10px;
+    margin-left: 30%;
+    height: 100%;
+    position: relative;
+}
+
+nav a {
+    padding: 0 10px;
+    font-size: 1.1em;
+    float: left;
+}
+
+.nav-div-1, .nav-div-2 {
+    width: 1px;
+    height: 17px;
+    background-color: lightgray;
+    position: absolute;
+    
+}
+
+.nav-div-1 {
+    left: 76px;
+}
+
+.nav-div-2 {
+    left: 161px;
+}
+
+
+
+/* MAIN-CONTENT STYLES */
+
+.main-content {
+    clear: both;
+    flex: 1; /* FLEXBOX STICKY FOOTER */
+    border-top: solid dimgray 2px;
+    width: 100%;
+    background: rgb(241, 241, 241) url("../images/shattered_@2x.png") repeat center;
+    padding: 40px 0 0 150px;
+}
+
+section {
+    width: 40%;
+    background-color: white;
+    padding: 3%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.bio-photo {
+    float: left;
+    padding-right: 15px;
+    width: 200px;
+}
+
+aside {
+    min-width: 270px;
+    padding: 30px;
+    float: left;
+    background-color: white;
+    margin-left: 10%;
+}
+
+a img {
+    transition: .8s ease-in-out;
+}
+
+a img:hover {
+    opacity: .5;
+    width: 62px;
+}
+
+.icon {
+    width: 60px;
+}
+
+.center {
+    margin: 0 10px;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: 20px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+
+
+/* PORTFOLIO STYLES */
+
+.portfolio {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.project {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-header {
+    background-color: cadetblue;
+    color: white;
+    width: 210px;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+
+.project:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+/* FORM STYLES */
+
+.input-text, textarea {
+    width: 100%;
+    margin: 5px 0 10px 0;
+}
+
+.btn {
+    background-color: cadetblue;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: white;
+    transition: .8s ease-in-out;
+}
+
+.btn:hover {
+    background-color: dimgray;
+    font-size: 1.2em;
+}
+
+
+
+/* FOOTER STYLES */
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: dimgray;
+    color: lightgray;
+    text-align: center;
+    line-height: 350%;
+    border-top: solid #4aaaa5 9px;
+}

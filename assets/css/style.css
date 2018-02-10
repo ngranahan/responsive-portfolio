@@ -123,7 +123,7 @@ nav a {
 }
 
 section {
-    width: 40%;
+    width: 45%;
     background-color: white;
     padding: 3%;
     float: left;
@@ -243,4 +243,72 @@ footer {
     text-align: center;
     line-height: 350%;
     border-top: solid #4aaaa5 9px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 980px) {
+    .bio-photo {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   .logo {
+       margin-left: 20px;
+   } 
+
+   nav {
+       margin-left: 25%;
+   }
+
+    .bio-photo {
+        float: left;
+        width: 200px;
+    }
+   section, aside {
+       float: none;
+       width: 90%;
+       margin: 0 auto 40px auto;
+   }
+
+   .main-content {
+       padding: 40px;
+   }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        height: 160px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav {
+        float: none;
+        height: 80px;
+        position: absolute;
+        bottom: 0;
+        margin-left: 10%;
+
+    }
+
+    nav a {
+        padding: 0 40px;
+    }
+
+    .nav-div-1, .nav-div-2 {
+        display: none;
+    }
+
+    .bio-photo {
+        float: none;
+        width: 100%;
+    }
 }

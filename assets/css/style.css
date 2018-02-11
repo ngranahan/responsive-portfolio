@@ -252,6 +252,11 @@ footer {
         float: none;
         width: 100%;
     }
+
+    nav {
+        position: absolute;
+        right: -10px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -293,9 +298,12 @@ footer {
     nav {
         float: none;
         height: 80px;
+        width: 440px;
         position: absolute;
+        left: 50%;
+        transform: translate(-50%);
         bottom: 0;
-        margin-left: 10%;
+        margin-left: 0;
 
     }
 
